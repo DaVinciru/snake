@@ -15,6 +15,12 @@ namespace Snake
             char sym1 = '*';
             Console.SetCursorPosition(x1, y1);
             Console.Write ( sym1);
+            
+            int x2 = 3;
+            int y2 = 5;
+            char sym2 = '#';
+            Console.SetCursorPosition(x2, y2);
+            Console.Write ( sym2);
 
             Console.ReadLine();
 
