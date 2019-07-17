@@ -16,6 +16,12 @@ namespace Snake
             p1.sym = '*';
             Draw(p1.x, p1.y, p1.sym);
 
+            Point p2 = new Point();
+            p2.x = 2;
+            p2.y = 5;
+            p2.sym = '#';
+            Draw(p2.x, p2.y, p2.sym);
+
             Console.ReadLine();
 
         }
