@@ -1,8 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-public class Class1
+namespace Snake
 {
-	public Class1()
-	{
-	}
+    class Point
+    {
+        public int x;
+        public int y;
+        public char sym;
+    }
 }
