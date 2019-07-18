@@ -11,24 +11,30 @@ namespace Snake
         static void Main(string[] args)
         {
             Point p1 = new Point(1, 3, '*');
-            /*p1.x = 1;
-            p1.y = 3;
-            p1.sym = '*';*/
-            p1.Draw();
-
             Point p2 = new Point(4, 5, '#');
-            /*p2.x = 2;
-            p2.y = 5;
-            p2.sym = '#';*/
-            p2.Draw();
+            Point p3 = new Point(3, 5, '&');
+            Point p4 = new Point(5, 7, '@');
+
+
+            List<Point> pPoint = new List<Point>();
+            pPoint.Add(p1);
+            pPoint.Add(p2);
+            pPoint.Add(p3);
+            pPoint.Add(p4);
+
+           /* int x = numList[0];
+            int y = numList[1];
+            int z = numList[2];
+            */
+            foreach (Point i in pPoint)
+            {
+                i.Draw();
+            }
+
+            pPoint.RemoveAt(0);
 
             Console.ReadLine();
 
         }
-       /* static void Draw (int x, int y, char sym)
-            {
-            Console.SetCursorPosition(x, y);
-            Console.Write ( sym);
-            }   */
     }
 }
