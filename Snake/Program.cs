@@ -33,6 +33,10 @@ namespace Snake
 
             pPoint.RemoveAt(0);
 
+            HorizontalLine line = new HorizontalLine();
+            line.Draw();
+
+
             Console.ReadLine();
 
         }
