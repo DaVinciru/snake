@@ -27,11 +27,11 @@ namespace Snake
             leftline.Draw();
 
             //Отрисовка точек
-            Point p = new Point(4, 5, '*');
+            Point p = new Point(4, 5, '#');
             Snake snake = new Snake(p, 4, Direction.RIGHT);
             snake.Draw();
 
-            FoodCreator foodCreator = new FoodCreator(80, 25, '$');
+            FoodCreator foodCreator = new FoodCreator(80, 25, '@');
             Point food = foodCreator.CreateFood();
             food.Draw();
 
@@ -46,7 +46,7 @@ namespace Snake
                 {
                     snake.Move();
                 }
-                Thread.Sleep(200);
+                Thread.Sleep(100);
 
                 if (Console.KeyAvailable)
                 {

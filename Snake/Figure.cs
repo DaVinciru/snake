@@ -10,7 +10,8 @@ namespace Snake
     {
         protected List<Point> pList;
 
-        public void Draw()
+        // Делаем так (virtual), чтобы все, кто использует метод Draw мог задать для него свои параметры
+        public virtual void Draw()
         {
             foreach (Point p in pList)
             {
